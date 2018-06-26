@@ -1,0 +1,47 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href={% static 'bootstrap/dist/css/bootstrap.min.css'%}>
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css'%}>
+    <link href={% static 'font-awesome/css/font-awesome.min.css'%} rel="stylesheet" type="text/css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Stock Analyzer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Stock Graph
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sentiment Graph</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Combined Graph</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tweets</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Search Company">
+            </form>
+        </div>
+    </nav>
+</body>
+
+</html>
